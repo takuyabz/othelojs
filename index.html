@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>オセロ</title>
+</head>
+
+<body>
+  <h1>オセロ（ランダムAI）</h1>
+  <p>PlayerクリックでAI/Playerで切替できます。</p>
+  <div id="game">
+    <div id="stage"></div>
+    <div id="info">
+      <div><span>○</span><span id="stonesW">02</span></div>
+      <div><span>●</span><span id="stonesB">02</span></div>
+    </div>
+    <div id="info2">
+      <div><span>○</span><span id="modeW">Player</span></div>
+      <div><span>●</span><span id="modeB">Player</span></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1em;
+    }
+
+    #info,
+    #info2 {
+      display: none;
+    }
+
+    #info div,
+    #info2 div {
+      display: inline-block;
+      width: 50%;
+      font-size: 2em;
+    }
+  </style>
+</body>
+
+</html>
